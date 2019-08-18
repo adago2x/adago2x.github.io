@@ -62,59 +62,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Typora中设置文字字体、字号和颜色" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2019/08/19/Typora中设置文字字体、字号和颜色/" class="article-date">
-  <time datetime="2019-08-18T17:53:33.000Z" itemprop="datePublished">2019-08-19</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/08/19/Typora中设置文字字体、字号和颜色/">Typora中设置文字字体、字号和颜色</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>通过在正文中直接内嵌HTML代码实现：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;font face=&quot;STCAIYUN&quot;&gt;华文字体&lt;/font&gt;</span><br><span class="line">&lt;font color=gray size=5&gt;颜色为灰色&lt;/font&gt;</span><br><span class="line">&lt;font color=#0099ff size=5 face=&quot;黑体&quot;&gt;color=#0099ff size=5 face=&quot;黑体&quot;&lt;/font&gt;</span><br></pre></td></tr></table></figure>
-
-<p>下面内嵌以上HTML代码片段，即实现如下风格：</p>
-<p><font face="STCAIYUN">华文字体</font><br><font color="gray" size="5">颜色为灰色</font><br><font color="#0099ff" size="5" face="黑体">color=#0099ff size=5 face=”黑体”</font></p>
-<h4 id="文字背景色"><a href="#文字背景色" class="headerlink" title="文字背景色"></a>文字背景色</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=#FF4500&gt;橘红色背景OrangeRed，十六进制颜色值：#FF4500， rgb(255, 69, 0)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</span><br></pre></td></tr></table></figure>
-
-<table><tr><td bgcolor="#FF4500">橘红色背景OrangeRed，十六进制颜色值：#FF4500， rgb(255, 69, 0)</td></tr></table>
-
-
-
-<p>:black_flag:</p>
-<p>:wave:</p>
-<p>:wave:</p>
-<p>:flags:</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/19/Typora中设置文字字体、字号和颜色/" data-id="cjzh9td5700001x8yaocjj5cc" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/神技/">神技</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-MarkDown支持代码高亮" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/08/19/MarkDown支持代码高亮/" class="article-date">
@@ -142,10 +89,10 @@
 <p>在MarkDown编辑时，我们经常需要引入一段代码，此时若果代码能高亮显示，界面就会非常友好。</p>
 <p>使用前：<br>public static void main(String[] args){<br>System.out.println(“Hello”);<br>}</p>
 <p>使用后：</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>&#123;</span><br><span class="line">    System.out.println(<span class="string">"Hello"</span>);</span><br><span class="line">&#125;<span class="number">123</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight java"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span></span>{</span><br><span class="line">    System.out.println(<span class="string">"Hello"</span>);</span><br><span class="line">}<span class="number">123</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p>其中，使用</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">``` key</span><br><span class="line"> 代码段 </span><br><span class="line">```123</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">``` key</span><br><span class="line"> 代码段 </span><br><span class="line">```123</span><br></pre></td></tr></tbody></table></figure>
 
 <p>来标记语言时，下面的就会表格就会派上用场了</p>
 <table>
@@ -616,11 +563,29 @@
 <td>yml</td>
 </tr>
 </tbody></table>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/19/MarkDown支持代码高亮/" data-id="cjzh9td5g00031x8yrrz8ng8t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/19/MarkDown支持代码高亮/" data-id="cjzhbwly50000f58y01jfm0bk" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/神技/">神技</a></li></ul>
@@ -682,7 +647,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/18/中文标题测试/" data-id="cjzh9td5j00051x8y7y9637hw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/18/中文标题测试/" data-id="cjzhbwlyj0004f58ye170y3hy" class="article-share-link">Share</a>
       
       
     </footer>
@@ -729,7 +694,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/18/my-1st-blog/" data-id="cjzh9td5i00041x8yzkj95dd2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/18/my-1st-blog/" data-id="cjzhbwlyh0003f58ye2wowgph" class="article-share-link">Share</a>
       
       
     </footer>
@@ -762,23 +727,41 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/08/18/hello-world/" data-id="cjzh9td5b00011x8ya8crnrqm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/08/18/hello-world/" data-id="cjzhbwlyc0001f58y2tndzhke" class="article-share-link">Share</a>
       
       
     </footer>
@@ -831,10 +814,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2019/08/19/Typora中设置文字字体、字号和颜色/">Typora中设置文字字体、字号和颜色</a>
-          </li>
         
           <li>
             <a href="/2019/08/19/MarkDown支持代码高亮/">MarkDown支持代码高亮</a>
