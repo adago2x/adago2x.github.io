@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>adago2x</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://adago2x.github.io/"/>
+  <updated>2019-08-23T16:05:42.284Z</updated>
+  <id>https://adago2x.github.io/</id>
+  
+  <author>
+    <name>凌波小旋风</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>纪念AaronSwartz</title>
+    <link href="https://adago2x.github.io/z_post/%E7%BA%AA%E5%BF%B5AaronSwartz/"/>
+    <id>https://adago2x.github.io/z_post/纪念AaronSwartz/</id>
+    <published>2019-08-23T15:50:09.000Z</published>
+    <updated>2019-08-23T16:05:42.284Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;纪念AaronSwartz&quot;&gt;&lt;a href=&quot;#纪念AaronSwartz&quot; class=&quot;headerlink&quot; title=&quot;纪念AaronSwartz&quot;&gt;&lt;/a&gt;纪念AaronSwartz&lt;/h1&gt;&lt;h2 id=&quot;——他用生命捍卫了互联网的开放和自由&quot;&gt;&lt;a href=&quot;#——他用生命捍卫了互联网的开放和自由&quot; class=&quot;headerlink&quot; title=&quot;——他用生命捍卫了互联网的开放和自由&quot;&gt;&lt;/a&gt;——他用生命捍卫了互联网的开放和自由&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;来源：&lt;a href=&quot;http://www.lupaworld.com/article-266395-1.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;http://www.lupaworld.com/article-266395-1.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;2013 年 1 月 11 日，著名社交网站 Reddit 联合创始人，web.py 框架的设计者 Aaron Swartz 在其公寓内自杀身亡。这个毕生追求互联网真正开放精神的人最后选择自杀来和这个世界告别，当时他才 26 岁。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://static.oschina.net/uploads/space/2018/0111/071810_2tHi_2720166.jpg&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;回顾 Aaron Swartz 短暂的一生，作为一个开发者和技术人员，他没有用高超的技术来获取大量的财富，而是不遗余力地使互联网和世界成为一个更公平，更美好的地方。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="传奇" scheme="https://adago2x.github.io/categories/%E4%BC%A0%E5%A5%87/"/>
+    
+    
+      <category term="人物" scheme="https://adago2x.github.io/tags/%E4%BA%BA%E7%89%A9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Typora中设置文字字体、字号和颜色</title>
+    <link href="https://adago2x.github.io/z_post/Typora%E4%B8%AD%E8%AE%BE%E7%BD%AE%E6%96%87%E5%AD%97%E5%AD%97%E4%BD%93%E3%80%81%E5%AD%97%E5%8F%B7%E5%92%8C%E9%A2%9C%E8%89%B2/"/>
+    <id>https://adago2x.github.io/z_post/Typora中设置文字字体、字号和颜色/</id>
+    <published>2019-08-18T18:57:17.000Z</published>
+    <updated>2019-08-19T16:33:35.695Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;通过在正文中直接内嵌HTML代码实现：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;font face=&quot;STCAIYUN&quot;&amp;gt;华文字体&amp;lt;/font&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;font color=gray size=5&amp;gt;颜色为灰色&amp;lt;/font&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;lt;font color=#0099ff size=5 face=&quot;黑体&quot;&amp;gt;color=#0099ff size=5 face=&quot;黑体&quot;&amp;lt;/font&amp;gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;下面内嵌以上HTML代码片段，即实现如下风格：&lt;/p&gt;
+&lt;p&gt;&lt;font face=&quot;STCAIYUN&quot;&gt;华文字体&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;gray&quot; size=&quot;5&quot;&gt;颜色为灰色&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#0099ff&quot; size=&quot;5&quot; face=&quot;黑体&quot;&gt;color=#0099ff size=5 face=”黑体”&lt;/font&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="程序技术" scheme="https://adago2x.github.io/categories/%E7%A8%8B%E5%BA%8F%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="MarkDown" scheme="https://adago2x.github.io/tags/MarkDown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MarkDown支持代码高亮</title>
+    <link href="https://adago2x.github.io/z_post/MarkDown%E6%94%AF%E6%8C%81%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE/"/>
+    <id>https://adago2x.github.io/z_post/MarkDown支持代码高亮/</id>
+    <published>2019-08-18T17:46:21.000Z</published>
+    <updated>2019-08-19T16:33:49.732Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;本文来源于他人原创，仅转载学习。&lt;/p&gt;
+&lt;p&gt;原创链接：&lt;a href=&quot;https://blog.csdn.net/u012102104/article/details/78950290&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://blog.csdn.net/u012102104/article/details/78950290&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;在MarkDown编辑时，我们经常需要引入一段代码，此时若果代码能高亮显示，界面就会非常友好。&lt;/p&gt;
+&lt;p&gt;使用前：&lt;br&gt;public static void main(String[] args){&lt;br&gt;System.out.println(“Hello”);&lt;br&gt;}&lt;/p&gt;
+&lt;p&gt;使用后：&lt;/p&gt;
+&lt;figure class=&quot;highlight java&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;params&quot;&gt;(String[] args)&lt;/span&gt;&lt;/span&gt;{&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    System.out.println(&lt;span class=&quot;string&quot;&gt;&quot;Hello&quot;&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;}&lt;span class=&quot;number&quot;&gt;123&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;
+    
+    </summary>
+    
+      <category term="程序技术" scheme="https://adago2x.github.io/categories/%E7%A8%8B%E5%BA%8F%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="神技" scheme="https://adago2x.github.io/tags/%E7%A5%9E%E6%8A%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://adago2x.github.io/z_post/hello-world/"/>
+    <id>https://adago2x.github.io/z_post/hello-world/</id>
+    <published>2019-08-17T20:38:06.861Z</published>
+    <updated>2019-08-17T20:38:06.862Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
