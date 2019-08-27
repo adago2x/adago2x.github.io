@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://adago2x.github.io/"/>
-  <updated>2019-08-23T16:05:42.284Z</updated>
+  <updated>2019-08-27T10:04:27.320Z</updated>
   <id>https://adago2x.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hexo添加RSS</title>
+    <link href="https://adago2x.github.io/z_post/Hexo%E6%B7%BB%E5%8A%A0RSS/"/>
+    <id>https://adago2x.github.io/z_post/Hexo添加RSS/</id>
+    <published>2019-08-27T09:58:21.000Z</published>
+    <updated>2019-08-27T10:04:27.320Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Hexo的Next主题集成RSS可以说是非常简单的一个操作，但也是一个极其容易搞错的操作，这里把失败和成功的过程都分享出来。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="web&amp;blog" scheme="https://adago2x.github.io/categories/web-blog/"/>
+    
+    
+      <category term="hexo" scheme="https://adago2x.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>纪念AaronSwartz</title>
