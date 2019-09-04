@@ -81,20 +81,20 @@
 
 
 
-<meta name="description" content="步骤Hexo上NexT主题已默认集成WidgetPack的Rating widget文章投票功能，所以配置过程很简单，其步骤如下：  在Widgetpack.com上注册，并获取用户ID。 修改NexT主题配置文件。 在Widgetpack.com账户设置你中意的投票方式。">
+<meta name="description" content="步骤Hexo上NexT主题已默认集成WidgetPack的Rating widget文章投票功能，所以配置过程很简单，其步骤如下：  在widgetpack.com上注册，并获取用户ID。 修改NexT主题配置文件。 登录widgetpack.com账户，设置自己中意的投票方式。">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo上NexT主题配置WidgetPack的Rating widget文章投票功能">
 <meta property="og:url" content="https://adago2x.github.io/z_post/Hexo上NexT主题配置WidgetPack的Rating-widget文章投票功能/index.html">
 <meta property="og:site_name" content="adago2x">
-<meta property="og:description" content="步骤Hexo上NexT主题已默认集成WidgetPack的Rating widget文章投票功能，所以配置过程很简单，其步骤如下：  在Widgetpack.com上注册，并获取用户ID。 修改NexT主题配置文件。 在Widgetpack.com账户设置你中意的投票方式。">
+<meta property="og:description" content="步骤Hexo上NexT主题已默认集成WidgetPack的Rating widget文章投票功能，所以配置过程很简单，其步骤如下：  在widgetpack.com上注册，并获取用户ID。 修改NexT主题配置文件。 登录widgetpack.com账户，设置自己中意的投票方式。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://raw.githubusercontent.com/adago2x/picture/master/img/rating-2019-09-04_16-42-00.png">
 <meta property="og:image" content="https://raw.githubusercontent.com/adago2x/picture/master/img/rating-IMG_395.png">
-<meta property="og:updated_time" content="2019-09-04T12:12:25.670Z">
+<meta property="og:updated_time" content="2019-09-04T15:53:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo上NexT主题配置WidgetPack的Rating widget文章投票功能">
-<meta name="twitter:description" content="步骤Hexo上NexT主题已默认集成WidgetPack的Rating widget文章投票功能，所以配置过程很简单，其步骤如下：  在Widgetpack.com上注册，并获取用户ID。 修改NexT主题配置文件。 在Widgetpack.com账户设置你中意的投票方式。">
+<meta name="twitter:description" content="步骤Hexo上NexT主题已默认集成WidgetPack的Rating widget文章投票功能，所以配置过程很简单，其步骤如下：  在widgetpack.com上注册，并获取用户ID。 修改NexT主题配置文件。 登录widgetpack.com账户，设置自己中意的投票方式。">
 <meta name="twitter:image" content="https://raw.githubusercontent.com/adago2x/picture/master/img/rating-2019-09-04_16-42-00.png">
 
 
@@ -379,29 +379,29 @@ daovoice('update');
       
         <h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>Hexo上NexT主题已默认集成WidgetPack的<code>Rating widget</code>文章投票功能，所以配置过程很简单，其步骤如下：</p>
 <ol>
-<li>在<a href="https://widgetpack.com/star-rating-widget" target="_blank" rel="noopener">Widgetpack.com</a>上注册，并获取用户ID。</li>
+<li>在<a href="https://widgetpack.com/star-rating-widget" target="_blank" rel="noopener">widgetpack.com</a>上注册，并获取用户ID。</li>
 <li>修改NexT主题配置文件。</li>
-<li>在Widgetpack.com账户设置你中意的投票方式。</li>
+<li>登录widgetpack.com账户，设置自己中意的投票方式。</li>
 </ol>
 <a id="more"></a>
 
-<h3 id="详细配置过程"><a href="#详细配置过程" class="headerlink" title="详细配置过程"></a>详细配置过程</h3><p>Widgetpack.com注册并<code>Add new site</code>成功后生成的<code>Rating Widget</code>安装代码如下：</p>
+<h3 id="详细配置过程"><a href="#详细配置过程" class="headerlink" title="详细配置过程"></a>详细配置过程</h3><p>在widgetpack.com上注册，并<code>Add new site</code>成功后，自动生成的<code>Rating Widget</code>安装代码如下：</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id="wpac-rating"&gt;&lt;/div&gt;</span><br><span class="line">&lt;script type="text/javascript"&gt;</span><br><span class="line">wpac_init = window.wpac_init || [];</span><br><span class="line">wpac_init.push({widget: 'Rating', id: *****});  #id为注册生成的ID</span><br><span class="line">(function() {</span><br><span class="line">    if ('WIDGETPACK_LOADED' in window) return;</span><br><span class="line">    WIDGETPACK_LOADED = true;</span><br><span class="line">    var mc = document.createElement('script');</span><br><span class="line">    mc.type = 'text/javascript';</span><br><span class="line">    mc.async = true;</span><br><span class="line">    mc.src = 'https://embed.widgetpack.com/widget.js';</span><br><span class="line">    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);</span><br><span class="line">})();</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;a href="https://widgetpack.com" class="wpac-cr"&gt;Star Rating WIDGET PACK&lt;/a&gt;</span><br></pre></td></tr></tbody></table></figure>
 
 <p>NexT已经默认集成了WidgetPack的Ratingwidget：</p>
 <ul>
 <li>只要查看主题配置文件<code>_config.yml</code>中的<code>rating</code>字段就可见相关默认配置。</li>
 <li>而以上安装代码已默认集成到<code>~/hexo/themes/next/layout/_third-party/rating.swig</code>文件中。</li>
-<li>所以，要启用Ratingwidget，只需要在WidgetPack.com注册后添加站点，获得ID后，修改NexT主题配置文件<code>rating</code>字段内容即可。</li>
+<li>所以，要启用Ratingwidget，只需要在widgetpack.com注册添加站点并获得ID后，修改NexT主题配置文件<code>rating</code>字段内容即可。</li>
 </ul>
 <p>NexT主题配置文件中<code>rating</code>的默认设置如下：</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Star rating support to each article.</span><br><span class="line"># To get your ID visit https://widgetpack.com</span><br><span class="line">rating:</span><br><span class="line">  enable: false</span><br><span class="line">  id:     #&lt;app_id&gt;</span><br><span class="line">  color:  fc6423</span><br></pre></td></tr></tbody></table></figure>
 
-<p>将enable改为<code>true</code>，添加在<code>Widget.com</code>上注册并新建站点后生成的ID，所有工作就完成了。</p>
+<p>将enable改为<code>true</code>，添加在widgetpack.com上注册获取的ID，所有工作就完成了。</p>
 <p>接下来就：</p>
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></tbody></table></figure>
 
-<h3 id="设置投票方式"><a href="#设置投票方式" class="headerlink" title="设置投票方式"></a>设置投票方式</h3><p>Rating的投票方式在<code>Widget.com</code>上设置即可，有三种方式可选：</p>
+<h3 id="设置投票方式"><a href="#设置投票方式" class="headerlink" title="设置投票方式"></a>设置投票方式</h3><p>Rating的投票方式在widgetpack.com上设置即可，有三种方式可选：</p>
 <ul>
 <li>Social</li>
 <li>IP Address</li>
@@ -417,7 +417,7 @@ daovoice('update');
 </ul>
 <img src="https://raw.githubusercontent.com/adago2x/picture/master/img/rating-IMG_395.png" width="40%" hegiht="40%" align="center">
 
-<p><strong><em>END</em></strong></p>
+<p><strong><em>~END~</em></strong></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -463,6 +463,7 @@ daovoice('update');
         <div class="post-widgets">
         
           <div class="wp_rating">
+          <div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px">(&gt;看完记得五星好评哦&lt;)</div>
             <div id="wpac-rating"></div>
           </div>
         

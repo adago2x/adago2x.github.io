@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://adago2x.github.io/"/>
-  <updated>2019-09-04T12:12:25.670Z</updated>
+  <updated>2019-09-04T15:53:11.000Z</updated>
   <id>https://adago2x.github.io/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="https://adago2x.github.io/z_post/Hexo%E4%B8%8ANexT%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AEWidgetPack%E7%9A%84Rating-widget%E6%96%87%E7%AB%A0%E6%8A%95%E7%A5%A8%E5%8A%9F%E8%83%BD/"/>
     <id>https://adago2x.github.io/z_post/Hexo上NexT主题配置WidgetPack的Rating-widget文章投票功能/</id>
     <published>2019-09-04T10:07:18.000Z</published>
-    <updated>2019-09-04T12:12:25.670Z</updated>
+    <updated>2019-09-04T15:53:11.000Z</updated>
     
     <summary type="html">
     
       &lt;h3 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h3&gt;&lt;p&gt;Hexo上NexT主题已默认集成WidgetPack的&lt;code&gt;Rating widget&lt;/code&gt;文章投票功能，所以配置过程很简单，其步骤如下：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;在&lt;a href=&quot;https://widgetpack.com/star-rating-widget&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Widgetpack.com&lt;/a&gt;上注册，并获取用户ID。&lt;/li&gt;
+&lt;li&gt;在&lt;a href=&quot;https://widgetpack.com/star-rating-widget&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;widgetpack.com&lt;/a&gt;上注册，并获取用户ID。&lt;/li&gt;
 &lt;li&gt;修改NexT主题配置文件。&lt;/li&gt;
-&lt;li&gt;在Widgetpack.com账户设置你中意的投票方式。&lt;/li&gt;
+&lt;li&gt;登录widgetpack.com账户，设置自己中意的投票方式。&lt;/li&gt;
 &lt;/ol&gt;
     
     </summary>
