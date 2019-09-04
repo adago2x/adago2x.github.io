@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="默认永久链接格式的问题和唯一化的意义 不利于SEO：Hexo永久链接的默认格式是:year/:month/:day/:title/，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。 不利于Google、百度等抓取：路径包含了年月日三个层级，太深不利于抓取。 不利于社会化分享和搜索：使用:year/:month/:day/:title/默认链接格式时，如AddThis分享后就无法跳转">
+<meta name="description" content="默认永久链接格式的问题和唯一化的意义 不利于SEO： Hexo永久链接的默认格式是:year/:month/:day/:title/，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。  不利于Google、百度等抓取： 路径包含了年月日三个层级，太深不利于抓取。  不利于社会化分享和搜索： 使用:year/:month/:day/:title/默认链接格式时，如AddThis分享后">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo上博文永久链接唯一化的实现">
 <meta property="og:url" content="https://adago2x.github.io/posts/43f20bcb.html">
 <meta property="og:site_name" content="adago2x">
-<meta property="og:description" content="默认永久链接格式的问题和唯一化的意义 不利于SEO：Hexo永久链接的默认格式是:year/:month/:day/:title/，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。 不利于Google、百度等抓取：路径包含了年月日三个层级，太深不利于抓取。 不利于社会化分享和搜索：使用:year/:month/:day/:title/默认链接格式时，如AddThis分享后就无法跳转">
+<meta property="og:description" content="默认永久链接格式的问题和唯一化的意义 不利于SEO： Hexo永久链接的默认格式是:year/:month/:day/:title/，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。  不利于Google、百度等抓取： 路径包含了年月日三个层级，太深不利于抓取。  不利于社会化分享和搜索： 使用:year/:month/:day/:title/默认链接格式时，如AddThis分享后">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-04T17:52:42.782Z">
+<meta property="og:updated_time" content="2019-09-04T17:58:16.249Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo上博文永久链接唯一化的实现">
-<meta name="twitter:description" content="默认永久链接格式的问题和唯一化的意义 不利于SEO：Hexo永久链接的默认格式是:year/:month/:day/:title/，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。 不利于Google、百度等抓取：路径包含了年月日三个层级，太深不利于抓取。 不利于社会化分享和搜索：使用:year/:month/:day/:title/默认链接格式时，如AddThis分享后就无法跳转">
+<meta name="twitter:description" content="默认永久链接格式的问题和唯一化的意义 不利于SEO： Hexo永久链接的默认格式是:year/:month/:day/:title/，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。  不利于Google、百度等抓取： 路径包含了年月日三个层级，太深不利于抓取。  不利于社会化分享和搜索： 使用:year/:month/:day/:title/默认链接格式时，如AddThis分享后">
 
 
 
@@ -397,10 +397,18 @@ daovoice('update');
 
       
         <h3 id="默认永久链接格式的问题和唯一化的意义"><a href="#默认永久链接格式的问题和唯一化的意义" class="headerlink" title="默认永久链接格式的问题和唯一化的意义"></a>默认永久链接格式的问题和唯一化的意义</h3><ul>
-<li>不利于SEO：Hexo永久链接的默认格式是<code>:year/:month/:day/:title/</code>，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。</li>
-<li>不利于Google、百度等抓取：路径包含了年月日三个层级，太深不利于抓取。</li>
-<li>不利于社会化分享和搜索：使用<code>:year/:month/:day/:title/</code>默认链接格式时，如AddThis分享后就无法跳转到blog的源链接，而Algolia也存在搜索结果跳转关联页面时报404。</li>
+<li><p>不利于SEO：</p>
+<p>Hexo永久链接的默认格式是<code>:year/:month/:day/:title/</code>，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。</p>
+</li>
+<li><p>不利于Google、百度等抓取：</p>
+<p>路径包含了年月日三个层级，太深不利于抓取。</p>
+</li>
+<li><p>不利于社会化分享和搜索：</p>
+<p>使用<code>:year/:month/:day/:title/</code>默认链接格式时，如AddThis分享后就无法跳转到blog的源链接，而Algolia也存在搜索结果跳转关联页面时报404。</p>
+</li>
 </ul>
+<a id="more"></a>
+
 <p>所以，就要考虑：</p>
 <ul>
 <li>简化永久链接格式，即：简短化</li>
@@ -426,7 +434,8 @@ daovoice('update');
 <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: Hexo上NexT主题配置WidgetPack的Rating widget文章投票功能</span><br><span class="line">tags: hexo</span><br><span class="line">categores: web&amp;blog</span><br><span class="line">abbrlink: 786cd75a</span><br><span class="line">date: 2019-09-04 18:07:18</span><br></pre></td></tr></tbody></table></figure>
 
 <p>之后的<code>$ hexo d</code>顺利完成。</p>
-<p>最终生成的永久链接形式如：<code>https://adago2x.github.io/posts/786cd75a.html</code>。</p>
+<p>最终生成的永久链接形式如：</p>
+<p><code>https://adago2x.github.io/posts/786cd75a.html</code>，</p>
 <p>Blog上分享链接后，在第三方社区跳转链接毫无问题，很完美！</p>
 <h3 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h3><p>永久链接的设置最好在Hexo部署到位后，开始着手发布文章前进行设置。</p>
 <p>在中途设置就会导致之前发布文章后原来相关的社会化分享链接、搜索失效，评论、投票等数据会清零，如果个人不介意的话倒也无所谓。</p>

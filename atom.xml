@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://adago2x.github.io/"/>
-  <updated>2019-09-04T17:52:42.782Z</updated>
+  <updated>2019-09-04T17:58:16.249Z</updated>
   <id>https://adago2x.github.io/</id>
   
   <author>
@@ -21,17 +21,21 @@
     <link href="https://adago2x.github.io/posts/43f20bcb.html"/>
     <id>https://adago2x.github.io/posts/43f20bcb.html</id>
     <published>2019-09-04T17:44:07.000Z</published>
-    <updated>2019-09-04T17:52:42.782Z</updated>
+    <updated>2019-09-04T17:58:16.249Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h3 id=&quot;默认永久链接格式的问题和唯一化的意义&quot;&gt;&lt;a href=&quot;#默认永久链接格式的问题和唯一化的意义&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h3 id=&quot;默认永久链接格式的问题和唯一化的意义&quot;&gt;&lt;a href=&quot;#默认永久链接格式的问题和唯一化的意义&quot; class=&quot;headerlink&quot; title=&quot;默认永久链接格式的问题和唯一化的意义&quot;&gt;&lt;/a&gt;默认永久链接格式的问题和唯一化的意义&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;不利于SEO：&lt;/p&gt;
+&lt;p&gt;Hexo永久链接的默认格式是&lt;code&gt;:year/:month/:day/:title/&lt;/code&gt;，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;不利于Google、百度等抓取：&lt;/p&gt;
+&lt;p&gt;路径包含了年月日三个层级，太深不利于抓取。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;不利于社会化分享和搜索：&lt;/p&gt;
+&lt;p&gt;使用&lt;code&gt;:year/:month/:day/:title/&lt;/code&gt;默认链接格式时，如AddThis分享后就无法跳转到blog的源链接，而Algolia也存在搜索结果跳转关联页面时报404。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     

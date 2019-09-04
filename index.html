@@ -393,62 +393,24 @@ daovoice('update');
 
       
         
-          
-            <h3 id="默认永久链接格式的问题和唯一化的意义"><a href="#默认永久链接格式的问题和唯一化的意义" class="headerlink" title="默认永久链接格式的问题和唯一化的意义"></a>默认永久链接格式的问题和唯一化的意义</h3><ul>
-<li>不利于SEO：Hexo永久链接的默认格式是<code>:year/:month/:day/:title/</code>，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。</li>
-<li>不利于Google、百度等抓取：路径包含了年月日三个层级，太深不利于抓取。</li>
-<li>不利于社会化分享和搜索：使用<code>:year/:month/:day/:title/</code>默认链接格式时，如AddThis分享后就无法跳转到blog的源链接，而Algolia也存在搜索结果跳转关联页面时报404。</li>
+          <h3 id="默认永久链接格式的问题和唯一化的意义"><a href="#默认永久链接格式的问题和唯一化的意义" class="headerlink" title="默认永久链接格式的问题和唯一化的意义"></a>默认永久链接格式的问题和唯一化的意义</h3><ul>
+<li><p>不利于SEO：</p>
+<p>Hexo永久链接的默认格式是<code>:year/:month/:day/:title/</code>，如果文章标题是中文的话，文章路径中就含有中文字符，不利于seo。</p>
+</li>
+<li><p>不利于Google、百度等抓取：</p>
+<p>路径包含了年月日三个层级，太深不利于抓取。</p>
+</li>
+<li><p>不利于社会化分享和搜索：</p>
+<p>使用<code>:year/:month/:day/:title/</code>默认链接格式时，如AddThis分享后就无法跳转到blog的源链接，而Algolia也存在搜索结果跳转关联页面时报404。</p>
+</li>
 </ul>
-<p>所以，就要考虑：</p>
-<ul>
-<li>简化永久链接格式，即：简短化</li>
-<li>使链接唯一化，即：文件标题随意修改，文章的链接也永远不变，而不会像原来采用<code>:year/:month/:day/:title/</code>的链接格式会因文章标题改变，而导致最初的链接失效造成死链。</li>
-</ul>
-<p>所以，寻寻觅觅后发现大神<a href="https://github.com/rozbo" target="_blank" rel="noopener"><code>落月rozbo</code></a>搞出插件<a href="https://github.com/Rozbo/hexo-abbrlink#readme" target="_blank" rel="noopener">hexo-abbrlink</a>(GitHub)、<a href="https://www.npmjs.com/package/hexo-abbrlink" target="_blank" rel="noopener">hexo-abbrlink</a>(npmjs.com)为我们解决了这个问题。</p>
-<p>让我们来看看如此精妙的实现方式！</p>
-<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>安装<code>hexo-abbrlink</code>插件，在站点根目录执行：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-abbrlink --save</span><br></pre></td></tr></tbody></table></figure>
-
-<p>执行结果如下：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$ cd taoblog</span><br><span class="line">$ npm install hexo-abbrlink --save</span><br><span class="line">npm WARN babel-eslint@10.0.2 requires a peer of eslint@&gt;= 4.12.1 but none is installed. You must install peer dependencies yourself.</span><br><span class="line"></span><br><span class="line">+ hexo-abbrlink@2.0.5</span><br><span class="line">added 39 packages from 24 contributors in 5.479s</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   ╭────────────────────────────────────────────────────────────────╮</span><br><span class="line">   │                                                                │</span><br><span class="line">   │       New major version of npm available! 5.6.0 → 6.11.2       │</span><br><span class="line">   │   Changelog: https://github.com/npm/cli/releases/tag/v6.11.2   │</span><br><span class="line">   │               Run npm install -g npm to update!                │</span><br><span class="line">   │                                                                │</span><br><span class="line">   ╰────────────────────────────────────────────────────────────────╯</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="修改站点配置文件"><a href="#修改站点配置文件" class="headerlink" title="修改站点配置文件"></a>修改站点配置文件</h3><p>修改站点配置文件<code>_config.yml</code> ，注释原先的<code>permalink</code>、<code>permalink_defaults</code>，并添加如下设置：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># permalink: :year/:month/:day/:title/</span><br><span class="line"># permalink_defaults:</span><br><span class="line">permalink: posts/:abbrlink.html</span><br><span class="line">abbrlink:</span><br><span class="line">  alg: crc32  # 算法：crc16(default) and crc32</span><br><span class="line">  rep: hex    # 进制：dec(default) and hex</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="生成并部署"><a href="#生成并部署" class="headerlink" title="生成并部署"></a>生成并部署</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></tbody></table></figure>
-
-<p>执行<code>$ hexo g</code>时，提示信息的开头与原来有区别如下，这显示了已为文章生成了永久链接：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">INFO  Start processing</span><br><span class="line">INFO  Generate link 786cd75a for post [Hexo上NexT主题配置WidgetPack的Rating widget文章投票功能]</span><br><span class="line">INFO  Generate link fc418d47 for post [MarkDown支持代码高亮]</span><br><span class="line">INFO  Generate link 14479307 for post [Typora中设置文字字体、字号和颜色]</span><br><span class="line">INFO  Generate link 77130092 for post [Hexo添加RSS]</span><br></pre></td></tr></tbody></table></figure>
-
-<p>同时还会在文章的front-matter中加入<code>abbrlink:</code>，如下：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: Hexo上NexT主题配置WidgetPack的Rating widget文章投票功能</span><br><span class="line">tags: hexo</span><br><span class="line">categores: web&amp;blog</span><br><span class="line">abbrlink: 786cd75a</span><br><span class="line">date: 2019-09-04 18:07:18</span><br></pre></td></tr></tbody></table></figure>
-
-<p>之后的<code>$ hexo d</code>顺利完成。</p>
-<p>最终生成的永久链接形式如：<code>https://adago2x.github.io/posts/786cd75a.html</code>。</p>
-<p>Blog上分享链接后，在第三方社区跳转链接毫无问题，很完美！</p>
-<h3 id="建议"><a href="#建议" class="headerlink" title="建议"></a>建议</h3><p>永久链接的设置最好在Hexo部署到位后，开始着手发布文章前进行设置。</p>
-<p>在中途设置就会导致之前发布文章后原来相关的社会化分享链接、搜索失效，评论、投票等数据会清零，如果个人不介意的话倒也无所谓。</p>
-<p><strong><em>~END~</em></strong></p>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/43f20bcb.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
