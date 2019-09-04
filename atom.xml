@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://adago2x.github.io/"/>
-  <updated>2019-09-04T15:53:11.000Z</updated>
+  <updated>2019-09-04T17:52:42.782Z</updated>
   <id>https://adago2x.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo上博文永久链接唯一化的实现</title>
+    <link href="https://adago2x.github.io/posts/43f20bcb.html"/>
+    <id>https://adago2x.github.io/posts/43f20bcb.html</id>
+    <published>2019-09-04T17:44:07.000Z</published>
+    <updated>2019-09-04T17:52:42.782Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;默认永久链接格式的问题和唯一化的意义&quot;&gt;&lt;a href=&quot;#默认永久链接格式的问题和唯一化的意义&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="web&amp;blog" scheme="https://adago2x.github.io/categories/web-blog/"/>
+    
+    
+      <category term="hexo" scheme="https://adago2x.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Hexo上NexT主题配置WidgetPack的Rating widget文章投票功能</title>
     <link href="https://adago2x.github.io/posts/786cd75a.html"/>
     <id>https://adago2x.github.io/posts/786cd75a.html</id>
     <published>2019-09-04T10:07:18.000Z</published>
-    <updated>2019-09-04T15:53:11.000Z</updated>
+    <updated>2019-09-04T16:45:23.165Z</updated>
     
     <summary type="html">
     
@@ -44,7 +70,7 @@
     <link href="https://adago2x.github.io/posts/77130092.html"/>
     <id>https://adago2x.github.io/posts/77130092.html</id>
     <published>2019-08-27T09:58:21.000Z</published>
-    <updated>2019-08-27T10:04:27.320Z</updated>
+    <updated>2019-09-04T16:45:23.169Z</updated>
     
     <summary type="html">
     
@@ -64,7 +90,7 @@
     <link href="https://adago2x.github.io/posts/f45c04d4.html"/>
     <id>https://adago2x.github.io/posts/f45c04d4.html</id>
     <published>2019-08-23T15:50:09.000Z</published>
-    <updated>2019-08-23T16:05:42.284Z</updated>
+    <updated>2019-09-04T16:45:23.171Z</updated>
     
     <summary type="html">
     
@@ -89,7 +115,7 @@
     <link href="https://adago2x.github.io/posts/14479307.html"/>
     <id>https://adago2x.github.io/posts/14479307.html</id>
     <published>2019-08-18T18:57:17.000Z</published>
-    <updated>2019-08-19T16:33:35.695Z</updated>
+    <updated>2019-09-04T16:45:23.168Z</updated>
     
     <summary type="html">
     
@@ -113,7 +139,7 @@
     <link href="https://adago2x.github.io/posts/fc418d47.html"/>
     <id>https://adago2x.github.io/posts/fc418d47.html</id>
     <published>2019-08-18T17:46:21.000Z</published>
-    <updated>2019-08-19T16:33:49.732Z</updated>
+    <updated>2019-09-04T16:45:23.166Z</updated>
     
     <summary type="html">
     
@@ -138,7 +164,7 @@
     <link href="https://adago2x.github.io/posts/4a17b156.html"/>
     <id>https://adago2x.github.io/posts/4a17b156.html</id>
     <published>2019-08-17T20:38:06.861Z</published>
-    <updated>2019-08-17T20:38:06.862Z</updated>
+    <updated>2019-09-04T16:45:23.170Z</updated>
     
     <summary type="html">
     
