@@ -365,70 +365,15 @@ daovoice('update');
 
       
         
-          
-            <h3 id="Valine有什么好？"><a href="#Valine有什么好？" class="headerlink" title="Valine有什么好？"></a>Valine有什么好？</h3><p>凭着喜好折腾过Disqus和Livere，都让我非常的无奈，对Disqus而言它在墙外我在墙内，麻烦；对Livere而言中文名起的很好，然盛名之下其实难副，在此称其为某必力。</p>
+          <h3 id="Valine有什么好？"><a href="#Valine有什么好？" class="headerlink" title="Valine有什么好？"></a>Valine有什么好？</h3><p>凭着喜好折腾过Disqus和Livere，都让我非常的无奈，对Disqus而言它在墙外我在墙内，麻烦；对Livere而言中文名起的很好，然盛名之下其实难副，在此称其为某必力。</p>
 <p>所以在下将目光投向了Valine，到头来发现选择它的理由竟无比的充分和必要：</p>
-<ul>
-<li>最诱惑我的是可以让阅读者匿名评论！</li>
-<li>呈现速度快，效率高，不像某必力那么不稳定，时不时明明登录了写完评论，一点发布，还让你登录，有愧于这“力”字。</li>
-<li>界面不像Disqus、某必力那么华丽，但优点就是简洁。</li>
-<li>MarkDown 全语法支持。</li>
-<li>无后端实现。</li>
-<li>Emoji 😉</li>
-</ul>
-<p>其实前四点就已经足够打动我选择Valine啦。</p>
-<blockquote>
-<p>官方对Valine的介绍：</p>
-<p>Valine 诞生于2017年8月7日，是一款基于<a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a>的快速、简洁且高效的无后端评论系统。 理论上支持但不限于静态博客，目前已有<a href="https://valine.js.org/hexo.html" target="_blank" rel="noopener">Hexo</a>、<a href="https://valine.js.org/jekyll.html" target="_blank" rel="noopener">Jekyll</a>、<a href="http://typecho.org/" target="_blank" rel="noopener">Typecho</a>、<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>、<a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a> 等博客程序在使用Valine。</p>
-</blockquote>
-<p>至于集成和配置，因NexT（<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">NexT.Gemini</a> v5.1.4）已经默认集成了Valine，所以整个操作三个步骤就可搞定：注册<a href="https://leancloud.app" target="_blank" rel="noopener">LeanCloud</a>获取appid和appkey，修改NexT主题配置，生成部署。</p>
-<h3 id="注册LeanCloud获取AppID和AppKey"><a href="#注册LeanCloud获取AppID和AppKey" class="headerlink" title="注册LeanCloud获取AppID和AppKey"></a>注册LeanCloud获取AppID和AppKey</h3><ol>
-<li>注册</li>
-</ol>
-<p>这里有一点需要提醒的是，为了避免很多认证最好采用<a href="https://leancloud.app" target="_blank" rel="noopener">LeanCloud国际版</a>进行注册，觉得无所谓可以略过。</p>
-<p>注册前可先参考<a href="https://leancloud.app/pricing/" target="_blank" rel="noopener">Pricing</a>页面，选择Developer(Free)进行注册。</p>
-<ol start="2">
-<li>创建应用生成appid和appkey</li>
-</ol>
-<p>注册验证完成后，先创建应用，选择<code>开发版</code>同时选择“根据现有应用<code>SCHEMA</code>创建”。</p>
-<p>创建成功后在LeanCloud Console中：进入设置-应用Key，可见生成的<code>App ID</code>和<code>App Key</code>：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">App ID: your leancloud application appid  #每个app有一个唯一ID,不可变更</span><br><span class="line">App Key: your leancloud application appkey  #适用于所有平台</span><br></pre></td></tr></tbody></table></figure>
-
-<ol start="3">
-<li>关联Blog站点的域名</li>
-</ol>
-<p>在LeanCloud Console中：进入设置-安全中心-Web安全域名，写入需要关联的域名，并保存。</p>
-<h3 id="修改NexT主题配置"><a href="#修改NexT主题配置" class="headerlink" title="修改NexT主题配置"></a>修改NexT主题配置</h3><p>取得<code>App ID</code>和<code>App Key</code>并关联Blog域名后，在NexT主题配置文件的<code>Valine</code>字段下，将<code>enable</code>改为true，在<code>appid</code>和<code>appkey</code>后写入LeanCloud上获取的<code>App ID</code>和<code>App Key</code>，<code>Valine</code>字段默认信息如下：</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"># Valine.</span><br><span class="line"># You can get your appid and appkey from https://leancloud.cn</span><br><span class="line"># more info please open https://valine.js.org</span><br><span class="line">valine:</span><br><span class="line">  enable: false</span><br><span class="line">  appid:  # your leancloud application appid</span><br><span class="line">  appkey:  # your leancloud application appkey</span><br><span class="line">  notify: false # mail notifier , https://github.com/xCss/Valine/wiki</span><br><span class="line">  verify: false # Verification code</span><br><span class="line">  placeholder: Just go go # comment box placeholder</span><br><span class="line">  avatar: mm # gravatar style</span><br><span class="line">  guest_info: nick,mail,link # custom comment header</span><br><span class="line">  pageSize: 10 # pagination size</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="Done"><a href="#Done" class="headerlink" title="Done"></a>Done</h3><p>上面的工作完成之后，就可以生成和部署，搞定收工。</p>
-<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></tbody></table></figure>
-
-<blockquote>
-<p>相关官方链接：<br><a href="https://valine.js.org" target="_blank" rel="noopener">valine.js.org</a></p>
-<p><a href="https://github.com/xCss/Valine" target="_blank" rel="noopener">Valine on GitHub</a></p>
-<p><a href="https://leancloud.app" target="_blank" rel="noopener">LeanCloud国际版</a></p>
-</blockquote>
-<script>
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { return; }
-            const img = document.createElement('img');
-            img.style = 'display:none !important;';
-            img.src = el.dataset.src;
-            img.addEventListener('error', () => {
-              img.remove();
-              el.style.color = 'inherit';
-              el.style.backgroundImage = 'none';
-              el.style.background = 'none';
-            });
-            img.addEventListener('load', () => {
-              img.remove();
-            });
-            document.body.appendChild(img);
-          });
-      </script>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/ef418d47.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
