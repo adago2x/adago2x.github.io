@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://adago2x.github.io/"/>
-  <updated>2019-09-06T14:07:28.584Z</updated>
+  <updated>2019-09-07T12:32:49.533Z</updated>
   <id>https://adago2x.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在Hexo上NexT主题中痛断Algolia决然启用LocalSearch本地搜索</title>
+    <link href="https://adago2x.github.io/posts/ceaf4638.html"/>
+    <id>https://adago2x.github.io/posts/ceaf4638.html</id>
+    <published>2019-09-07T12:29:01.000Z</published>
+    <updated>2019-09-07T12:32:49.533Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;客观来讲，&lt;a href=&quot;https://www.algolia.com&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Aloglia&lt;/a&gt;是个功能非常不错、服务很完善、后台很强大的搜索服务平台，是一个特别理想的搜索服务，可是她虽阳春白雪，无奈我等身在伟大的墙以内，所以就会遇到很多的问题。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="web&amp;blog" scheme="https://adago2x.github.io/categories/web-blog/"/>
+    
+    
+      <category term="hexo" scheme="https://adago2x.github.io/tags/hexo/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo上NexT评论系统来回折腾后最终为什么采用Valine?</title>
