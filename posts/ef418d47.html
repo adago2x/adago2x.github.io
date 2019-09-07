@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="adago2x">
 <meta property="og:description" content="Valine有什么好？凭着喜好折腾过Disqus和Livere，都让我非常的无奈，对Disqus而言它在墙外我在墙内，麻烦；对Livere而言中文名起的很好，然盛名之下其实难副，在此称其为某必力。 所以在下将目光投向了Valine，到头来发现选择它的理由竟无比的充分和必要：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-06T14:07:28.584Z">
+<meta property="og:updated_time" content="2019-09-07T18:29:33.755Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo上NexT评论系统来回折腾后最终为什么采用Valine?">
 <meta name="twitter:description" content="Valine有什么好？凭着喜好折腾过Disqus和Livere，都让我非常的无奈，对Disqus而言它在墙外我在墙内，麻烦；对Livere而言中文名起的很好，然盛名之下其实难副，在此称其为某必力。 所以在下将目光投向了Valine，到头来发现选择它的理由竟无比的充分和必要：">
@@ -415,7 +415,9 @@ daovoice('update');
 <p>官方对Valine的介绍：</p>
 <p>Valine 诞生于2017年8月7日，是一款基于<a href="https://leancloud.cn/" target="_blank" rel="noopener">LeanCloud</a>的快速、简洁且高效的无后端评论系统。 理论上支持但不限于静态博客，目前已有<a href="https://valine.js.org/hexo.html" target="_blank" rel="noopener">Hexo</a>、<a href="https://valine.js.org/jekyll.html" target="_blank" rel="noopener">Jekyll</a>、<a href="http://typecho.org/" target="_blank" rel="noopener">Typecho</a>、<a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a>、<a href="https://ghost.org/" target="_blank" rel="noopener">Ghost</a> 等博客程序在使用Valine。</p>
 </blockquote>
-<p>至于集成和配置，因NexT（<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">NexT.Gemini</a> v5.1.4）已经默认集成了Valine，所以整个操作三个步骤就可搞定：注册<a href="https://leancloud.app" target="_blank" rel="noopener">LeanCloud</a>获取appid和appkey，修改NexT主题配置，生成部署。</p>
+<p>至于集成和配置，因NexT（<a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="noopener">NexT.Gemini</a> v5.1.4）已经默认集成了Valine，所以整个操作按以下几步就搞定了。</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">	注册LeanCloud -.-&gt; 创建应用</span><br><span class="line">	创建应用 -.-&gt; 获取appid和appkey</span><br><span class="line">	获取appid和appkey -.-&gt; 修改主题配置文件</span><br><span class="line">	修改主题配置文件 -.-&gt; 生成&amp;发布</span><br></pre></td></tr></tbody></table></figure>
+
 <h3 id="注册LeanCloud获取AppID和AppKey"><a href="#注册LeanCloud获取AppID和AppKey" class="headerlink" title="注册LeanCloud获取AppID和AppKey"></a>注册LeanCloud获取AppID和AppKey</h3><ol>
 <li>注册</li>
 </ol>
