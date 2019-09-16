@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://adago2x.github.io/"/>
-  <updated>2019-09-07T12:49:09.149Z</updated>
+  <updated>2019-09-16T19:12:20.914Z</updated>
   <id>https://adago2x.github.io/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>如果你改变主意就会改变世界</title>
+    <link href="https://adago2x.github.io/posts/d5cf14b9.html"/>
+    <id>https://adago2x.github.io/posts/d5cf14b9.html</id>
+    <published>2019-09-16T18:56:58.000Z</published>
+    <updated>2019-09-16T19:12:20.914Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;我被告知，如果你改变主意，就会改变世界 - 或者至少改变你的方式。我们花点时间来研究一下。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="思想" scheme="https://adago2x.github.io/categories/%E6%80%9D%E6%83%B3/"/>
+    
+    
+      <category term="思想" scheme="https://adago2x.github.io/tags/%E6%80%9D%E6%83%B3/"/>
+    
+  </entry>
   
   <entry>
     <title>在Hexo上NexT主题中痛断Algolia决然启用LocalSearch本地搜索</title>
